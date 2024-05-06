@@ -2,7 +2,7 @@
 
 This is a working example of handling the iOS keyboard in a chat style application where you want the message bar to remain visible when the keyboard is shown.
 
-<img src="./github/screen.png" width="393" />
+<img src="https://raw.githubusercontent.com/mattpilott/ios-chat/main/.github/screen.png" width="393" />
 
 ## How it works
 
