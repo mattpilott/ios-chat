@@ -1,6 +1,6 @@
 # iOS Chat
 
-This is a working example of handling the iOS keyboard in a chat style application where you want the message above to remain visible when the keyboard is shown.
+This is a working example of handling the iOS keyboard in a chat style application where you want the message bar to remain visible when the keyboard is shown.
 
 ## How it works
 
