@@ -6,13 +6,12 @@
 
 html {
 	height: 100vh; /* Technique */
-	touch-action: none; /* Technique */
 }
 
 body {
 	font-family: system-ui, sans-serif;
 	margin: 0;
-	touch-action: none;
+	touch-action: none; /* Technique */
 }
 
 /* Fix for iOS Safari keyboard shifting view */
@@ -61,6 +60,7 @@ body {
 	gap: 10px;
 	padding-block: 10px;
 	padding-inline: 20px;
+	touch-action: none; /* Technique */
 }
 
 .input {
