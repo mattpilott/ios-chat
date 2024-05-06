@@ -27,10 +27,10 @@ body {
 
 .screen {
 	display: grid;
-	grid-template-rows: auto 1fr auto;
+	grid-template-rows: auto minmax(0, 1fr) auto;
 	height: var(--vvh); /* Technique */
 	overflow: auto; /* Technique */
-	overscroll-behavior: contain;
+	overscroll-behavior: contain; /* Technique */
 }
 
 .header {
