@@ -1,6 +1,6 @@
 # iOS Chat
 
-This is a working example of handling the iOS keyboard in a chat style application where you want the message bar to remain visible when the keyboard is shown.
+This is an alternate working example that uses height rather than top (useful if fixed positioning is not for you) of handling the iOS keyboard in a chat style application where you want the message bar to remain visible when the keyboard is shown.
 
 <p align="center">
 	<img src="https://raw.githubusercontent.com/mattpilott/ios-chat/main/.github/screen.png" width="280" />
