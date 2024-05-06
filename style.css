@@ -30,6 +30,7 @@ body {
 	grid-template-rows: auto 1fr auto;
 	height: var(--vvh); /* Technique */
 	overflow: auto; /* Technique */
+	overscroll-behavior: contain;
 }
 
 .header {
