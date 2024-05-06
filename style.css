@@ -28,8 +28,14 @@ body {
 
 .screen {
 	display: grid;
-	grid-template-rows: auto 1fr auto;
-	height: var(--vvh); /* Technique */
+	grid-template-rows: 1fr auto;
+	height: calc(var(--vvh) - var(--vvs)); /* Technique */
+	transition: height 0.2s ease-out;
+}
+
+.view {
+	display: grid;
+	grid-template-rows: auto 1fr;
 	overflow: auto; /* Technique */
 }
 
@@ -53,15 +59,8 @@ body {
 	border-block-start: 1px solid #ccc;
 	display: flex;
 	gap: 10px;
-	left: 0;
 	padding-block: 10px;
 	padding-inline: 20px;
-	position: fixed; /* Technique */
-	top: calc(var(--vvh) - var(--vvs)); /* Technique */
-	transform: translateY(-100%); /* Technique */
-	transition: top 0.25s ease; /* Technique */
-	width: 100%;
-	will-change: transform; /* Technique */
 }
 
 .input {
