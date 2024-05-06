@@ -67,6 +67,7 @@ body {
 
 .input {
 	flex-grow: 1;
+	touch-action: none; /* Technique */
 
 	&:focus {
 		animation: blink 0.02s; /* Technique */
