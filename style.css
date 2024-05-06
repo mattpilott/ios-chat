@@ -1,0 +1,73 @@
+*,
+::before,
+::after {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100vh; /* Technique */
+	touch-action: none; /* Technique */
+}
+
+body {
+	font-family: system-ui, sans-serif;
+	margin: 0;
+	touch-action: none;
+}
+
+/* Fix for iOS Safari keyboard shifting view */
+@keyframes blink {
+	/* Technique */
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.screen {
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	height: var(--vvh); /* Technique */
+	overflow: auto; /* Technique */
+}
+
+.header {
+	background-color: hsl(0 0% 100% / 0.4);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+	padding-top: env(safe-area-inset-top);
+	padding-inline: 20px;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+.content {
+	padding-inline: 20px;
+}
+
+.footer {
+	background-color: white;
+	border-block-start: 1px solid #ccc;
+	display: flex;
+	gap: 10px;
+	left: 0;
+	padding-block: 10px;
+	padding-inline: 20px;
+	position: fixed; /* Technique */
+	top: calc(var(--vvh) - var(--vvs)); /* Technique */
+	transform: translateY(-100%); /* Technique */
+	transition: top 0.25s ease; /* Technique */
+	width: 100%;
+	will-change: transform; /* Technique */
+}
+
+.input {
+	flex-grow: 1;
+
+	&:focus {
+		animation: blink 0.02s; /* Technique */
+	}
+}
