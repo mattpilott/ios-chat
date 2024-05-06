@@ -53,10 +53,10 @@ body {
 	display: flex;
 	gap: 10px;
 	left: 0;
-	padding-block: 10px;
+	padding-block: 10px calc(10px + var(--vvs));
 	padding-inline: 20px;
 	position: fixed; /* Technique */
-	top: calc(var(--vvh) - var(--vvs)); /* Technique */
+	top: var(--vvh); /* Technique */
 	transform: translateY(-100%); /* Technique */
 	transition: top 0.25s ease; /* Technique */
 	touch-action: none; /* Technique */
