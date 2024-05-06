@@ -16,7 +16,7 @@ This example takes the height of the visual viewport and sets a CSS variable `--
 
 For notched devices we add a second CSS variable `--vvs` which is set to `env(safe-area-inset-bottom)` or `0px` based on the height of the visualViewport.
 
-Whilst everything in the iife function in the `main.js` file is needed, the `style.css` file contains a mix of styles needed for the demo and the styles critical to the technique. These have been marked with a comment.
+Whilst everything in `main.js` (except the style import 😏) file is needed, the `style.css` file contains a mix of styles needed for the demo and the styles critical to the technique. These have been marked with a comment.
 
 ```js
 const vv = window.visualViewport
